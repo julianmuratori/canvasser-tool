@@ -137,7 +137,7 @@ p span {
 }
 [data-filter-group="category"] button {
   width: calc(100% / 5);
-  /*margin: 0 20px;*/
+  margin: 0;
   /*padding: 0 10px;*/
 }
 
