@@ -1,5 +1,17 @@
-var $grid = $('.grid').isotope({
-  itemSelector: '.value-prop'
+// var $grid = $('.grid').isotope({
+//   itemSelector: '.value-prop'
+// });
+//
+// $grid.imagesLoaded().progress( function() {
+//   $grid.isotope('layout');
+// });
+
+var $grid = $('.grid').imagesLoaded( function() {
+  // init Isotope after all images have loaded
+  $grid.isotope({
+    itemSelector: '.value-prop'
+    // options...
+  });
 });
 
 // store filter for each group
